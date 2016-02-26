@@ -32,7 +32,7 @@ shinyServer(function(input, output) {
          cm<-confusionMatrix(Pred,TestClasses)
          accur<<-cm$overall['Accuracy']
          
-         print(confusionMatrix(Pred,TestClasses))
+         #print(confusionMatrix(Pred,TestClasses))
          tPred<-diag(cm$table)
          #print(tTest)
          #print(tPred)
